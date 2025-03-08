@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -13,24 +13,9 @@
     tools:context=".MainActivity">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <Button
-
-            android:text="player 1"
-            android:rotation="180"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-
-    </LinearLayout>
     <GridLayout
-         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
-        android:id="@+id/board_layout"
+         android:id="@+id/board_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:rowCount="3"
@@ -75,7 +60,8 @@
     </GridLayout>
 
 
-    <LinearLayout
+
+     <LinearLayout
 
 
         android:layout_width="match_parent"
@@ -85,27 +71,18 @@
         android:gravity="center"
         android:orientation="horizontal">
 
+
         <Button
 
-            android:layout_marginLeft="20sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            />
-        <Button
-
+            android:id="@+id/reset_button"
             android:layout_marginLeft="20sp"
             android:layout_marginRight="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
+            android:text="reset"
             />
-        <Button
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20sp"
-            />
 
 
 
@@ -113,4 +90,4 @@
     </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>
